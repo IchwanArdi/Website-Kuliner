@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // Route utama
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
   res.render('index', { makanan: dataMakanan }); // Mengirim data ke template EJS
 });
 
